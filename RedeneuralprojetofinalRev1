@@ -1,0 +1,457 @@
+package Redeneuralprojetofinal;
+
+import java.util.Scanner;
+public class Questionarioredeneural {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner myScanner = new Scanner(System.in);
+		int renda, escolaridade, Quantgarrafas;
+int acaomeioambiente, coletaseletiva, boicote, mutirao, contribuição, usosacola, compraselomenosenergia,economizaagua;
+int energiasolareolica, caronasolidaria, transportepublico, contribuicao,canecalavavel, talherplastico, canudos;
+int rendabase=0,semagrotoxico=0, taxalimpezario=0, pesoescolaridade=0, pesogarrafa=0, quantgarrafas=0;
+float multaserpaga=0, somatorio=0;
+int a=0;
+int b=0;
+int c=0, k=0, z=0, w=0;
+int N2=0, N3=0, N4=0, N5=0, N6=0, N7=0, N8=0, N9=0, N10=0, N11=0, N12=0, N13=0, N14=0, N15=0, N16=0, N17=0;
+String nome;
+
+		System.out.print("Olá! Queremos saber mais sobre como você pensa sobre o meio ambiente!\n");
+		System.out.print("\n");
+		System.out.print("Responda as próximas perguntas com sinceridade, como você atua no dia-a-dia para proteger o meio ambiente. Vamos lá!\n ");
+		System.out.print("\n");
+		System.out.print("Primeiro responda: Qual o seu nome?");
+		System.out.print("\n");
+		nome = myScanner.next();
+		System.out.print("Qual a sua escolaridade? Escolha o número:\n ");
+		System.out.print("\n");
+		System.out.print("Até 4ª série ensino fundamental - Digite 1\n");
+		System.out.print("\n");
+		System.out.print("Fundamental completo - Digite 2\n");
+		System.out.print("\n");
+		System.out.print("Médio completo - Digite 3\n");
+		System.out.print("\n");
+		System.out.print("Superior completo – Digite 4\n");
+		System.out.print("\n");
+
+		escolaridade = myScanner.nextInt();
+		while (a!= 1) {
+		switch (escolaridade) {
+					case 1: {
+						pesoescolaridade = 1;
+						a = 1;
+						break;} 
+					case 2:  {
+						pesoescolaridade = 2;
+						a = 1;
+						break;}
+					case 3: {
+						pesoescolaridade = 3;
+						a = 1;
+						break;}
+					case 4: {
+						pesoescolaridade = 4;
+						a = 1;
+						break;}}
+
+					if (a!= 1) { System.out.print("Você digitou um número diferente! Tente novamente informar sua escolaridade!\n");
+					System.out.print("\n");}
+		}
+		
+		System.out.print("Qual sua renda mensal (em reais)?\n");
+		System.out.print("\n");
+		System.out.print("Até 1 salário-mínimo Digite 1\n");
+		System.out.print("\n");
+		System.out.print("De 1 até 2 salários-mínimos Digite 2\n");
+		System.out.print("\n");
+		System.out.print("De 2 até 5 salários-mínimos Digite 3\n");
+		System.out.print("\n");
+		System.out.print("De 5 até 10 salários-mínimos Digite 4\n");
+		System.out.print("\n");
+		System.out.print("Acima de 10 salários-mínimos Digite 5\n");
+		System.out.print("\n");
+		renda = myScanner.nextInt();
+		while (b!= 1) {
+		switch (renda) {
+					case 1: {
+						rendabase = 1000;
+						b = 1;
+						break;} 
+					case 2:  {
+						rendabase = 2000;
+						b = 1;
+						break;}
+					case 3: {
+						rendabase = 5000;
+						b = 1;
+						break;}
+					case 4: {
+						rendabase = 10000;
+						b = 1;
+						break;}
+		case 5: {
+						rendabase = 50000;
+						b = 1;
+						break;}
+		}
+		if (b!=1) {System.out.print("Você digitou um número diferente! Tente novamente informar sua renda!");}
+		      }
+			
+	
+	System.out.print("Quantas garrafas de plástico você consome por mês?\n ");
+	System.out.print("\n");
+	System.out.print("Até cinco garrafas de plástico - Digite 1\n");
+	System.out.print("\n");
+	System.out.print("De seis até vinte garrafas de plástico - Digite 2\n");
+	System.out.print("\n");
+	System.out.print("De vinte e uma até cinquenta garrafas de plástico  - Digite 3\n");
+	System.out.print("\n");
+	System.out.print("De cinquenta e uma até cem garrafas de plástico  - Digite 4\n");
+	System.out.print("\n");
+	System.out.print("Acima de cem garrafas de plástico - Digite 5\n");
+	System.out.print("\n");
+	quantgarrafas = myScanner.nextInt();
+
+	while (c!= 1) {
+	switch (quantgarrafas) {
+				case 1: {
+					pesogarrafa = 1;
+					c = 1;
+					break;} 
+				case 2:  {
+					pesogarrafa = 2;
+					c = 1;
+					break;}
+				case 3: {
+					pesogarrafa = 5;
+					c = 1;
+					break;}
+				case 4: {
+					pesogarrafa = 10;
+					c = 1;
+					break;}
+	case 5: {
+					pesogarrafa = 50;
+					c = 1;
+					break;}
+	}
+
+	if (c!=1) {System.out.print("Você digitou um número diferente! Tente novamente informar a quantidade de garrafas consumidas por você!\n");}
+	      }
+	System.out.print("\n");
+	multaserpaga= pesogarrafa*rendabase*pesoescolaridade;
+	System.out.print("Já participou de alguma ação em prol do meio ambiente? Sim, digite 1; Não, digite 2;\n ");
+	System.out.print("\n");
+	acaomeioambiente = myScanner.nextInt();
+
+	if (acaomeioambiente == 1) {
+					N2 = -10;} 
+	else { N2 = +15;}
+
+	System.out.print("\n");
+	System.out.print("Separa o lixo? Ou melhor, faz coleta seletiva? Sim, digite 1; Não, digite 2;\n ");
+	System.out.print("\n");
+	coletaseletiva = myScanner.nextInt();
+
+	if (coletaseletiva == 1) {
+					N3 = 10;} 
+	else { N3 = -10;}
+	System.out.print("\n");
+	System.out.print("Participar de campanhas de boicote a produtos de empresas que poluem o meio ambiente? Sim, digite 1; Não, digite 2;\n ");
+	System.out.print("\n");
+	boicote = myScanner.nextInt();
+
+	if (boicote == 1) {
+					N4 = +10;} 
+	else { N4 = 0;}
+
+	System.out.print("\n");
+	System.out.print("Participa, pelo menos um domingo por mês, de um mutirão de reflorestamento  ou limpeza de rios e córregos? Sim, digite 1; Não, digite 2;\n ");
+	System.out.print("\n");
+	mutirao = myScanner.nextInt();
+
+	if (mutirao == 1) {
+					N5 = +10;} 
+	else { N5 = 0;}
+	System.out.print("\n");
+	System.out.print("Contribui em dinheiro para organizações que cuidam do meio ambiente?  Sim, digite 1; Não, digite 2;\n");
+	System.out.print("\n");
+	contribuicao = myScanner.nextInt();
+
+	if (contribuicao == 1) {
+					N6 = +10;} 
+	else { N6 = 0;}
+
+	System.out.print("\n");
+	System.out.print("Faz uso de sacolas plásticas no comércio? Sim, digite 1; Não, digite 2; \n");
+	System.out.print("\n");
+	usosacola = myScanner.nextInt();
+
+	if (usosacola == 1) {
+					N7 = -10;} 
+	else { N7 = +10;}
+
+	System.out.print("\n");
+	System.out.print("Compra eletrodomésticos mais caros que consomem menos energia, com selos de eficiência energética?  Sim, digite 1; Não, digite 2;\n ");
+	System.out.print("\n");
+	compraselomenosenergia = myScanner.nextInt();
+
+	if (compraselomenosenergia == 1) {
+					N8 = 10;} 
+	else { N8 = -10;}
+
+	System.out.print("\n");
+	System.out.print("Você busca economizar o consumo de água? Sim, digite 1; Não, digite 2;\n ");
+	System.out.print("\n");
+	economizaagua = myScanner.nextInt();
+
+	if (economizaagua == 1) {
+					N9 = 10;} 
+	else { N9 = 0;}
+
+	System.out.print("\n");
+	System.out.print("Tem o hábito de pagar mais caro para consumir alimentos frescos sem agrotóxicos? Sim, digite 1; Não, digite 2; \n");
+	System.out.print("\n");
+	semagrotoxico = myScanner.nextInt();
+
+	if (semagrotoxico == 1) {
+					N10 = 10;} 
+	else { N10 = 0;}
+
+	System.out.print("\n");
+	System.out.print("Considera importante que o Estado imponha uma taxa para limpeza de rios? Sim, digite 1; Não, digite 2;\n ");
+	System.out.print("\n");
+	taxalimpezario = myScanner.nextInt();
+
+	if (taxalimpezario == 1) {
+					N11 = 10;} 
+	else { N11 = 0;}
+
+	System.out.print("\n");
+	System.out.print("Faz uso de caneca lavável, reutilizável, evitando assim o consumo de copos plásticos ? Sim, digite 1; Não, digite 2;\n"); 
+	System.out.print("\n");
+	canecalavavel = myScanner.nextInt();
+
+	if (canecalavavel == 1) {
+					N12 = +10;} 
+	else { N12 = -10;}
+
+	System.out.print("\n");
+	System.out.print("Evita utilizar talheres de plástico? Sim, digite 1; Não, digite 2;\n"); 
+	System.out.print("\n");
+	talherplastico = myScanner.nextInt();
+
+	if (talherplastico == 1) {
+					N13 = +10;} 
+	else { N13 = -10;}
+
+
+	System.out.print("\n");
+	System.out.print("Evita utilizar canudos de plástico? Sim, digite 1; Não, digite 2\n ");
+	System.out.print("\n");
+	canudos = myScanner.nextInt();
+
+	if (canudos == 1) {
+					N14 = +10;} 
+	else { N14 = -10;}
+
+	System.out.print("\n");
+	System.out.print("Havendo possibilidade, considera importante e faz uso de energia solar e energia eólica? Sim, digite 1; Não, digite 2;\n ");
+	System.out.print("\n");
+	energiasolareolica = myScanner.nextInt();
+
+	if (energiasolareolica == 1) {
+					N15 = +10;} 
+	else { N15 = -10;}
+
+	System.out.print("\n");
+	System.out.print("Tem automóvel e pratica “carona solidária”? Sim, digite 1; Não, digite 2;\n ");
+	System.out.print("\n");
+	caronasolidaria = myScanner.nextInt();
+
+	if (caronasolidaria == 1) {
+					N16 = +10;} 
+	else { N16 = -10;}
+	System.out.print("\n");
+	System.out.print("Tem automóvel e usa transporte público? Sim, digite 1; Não, digite 2;\n ");
+	System.out.print("\n");
+	transportepublico = myScanner.nextInt();
+
+	if (transportepublico == 1) {
+					N17 = +10;} 
+	else { N17 = -10;}
+
+	somatorio = N2+N3+N4+N5+N6+N7+N8+N9+N10+N11+N12+N13+N14+N15+N16+N17;
+	// N2 = -10 ou +15; N3= 10 ou -10; N4=+10 ou 0; N5= +10 ou 0; N6=+10 ou 0; N7= -10 ou +10; //N8=+10 ou -10; N9= 10 ou 0; N10= 10 ou 0; N11= 10 ou 0; N12= +10 ou -10; N13= +10 ou -10;// N14= +10 ou -10; N15=+10 ou -10; N16=+10 ou -10; N17= +10 ou -10; 
+	//Total= +15+ 10  +10 +10+10 +10+10+ 10+ 10+ 10 +10 +10 +10+10+10 +10=165
+
+	//Pode-se armazenar em banco de dados o resultado de cada pesquisa realizada, de modo a se //ter uma estatística do nível de consciência ambiental dos usuários.
+	System.out.print("\n");
+	System.out.print(nome); 
+	System.out.print(":\n");
+	if (somatorio <= 40) {
+	System.out.print("Por suas respostas, vejo que você pouco se importa com o meio ambiente. \nSeja um consumidor cidadão!\n Pense em como preservar o meio ambiente para as gerações presentes e futuras!\n Os recursos naturais são escassos!\nLeia as observações abaixo:\n ");} 
+	else { if ((somatorio>40)&&(somatorio<=80)){
+	System.out.print("Por suas respostas, em alguns pontos verifica-se que você pensa em proteger o meio ambiente.\n No lugar de ser um cidadão consumidor, seja um consumidor cidadão!\n Pense em como preservar o meio ambiente para as gerações presentes e futuras!\n Os recursos naturais são escassos!\n Leia as observações abaixo:\n' ");}
+	 else { 
+	if ((somatorio>80)&&(somatorio<=120)){
+	System.out.print("Verifica-se que mais de 50% de suas respostas são em prol da proteção ao meio ambiente.\n Mas pode melhorar.\n Veja abaixo como! Os recursos naturais são escassos!\n Leia as observações abaixo:\n ");}
+	else { System.out.print("Seu comportamento em prol do meio ambiente está próximo do que se espera de um cidadão!\n Mas pode melhorar.\n Veja as dicas abaixo:\n");
+	}
+	}
+	}
+	while (k!= 1) {
+		switch (pesoescolaridade) {
+					case 1: {
+		pesoescolaridade = 1;
+						System.out.print("Para você que tem escolaridade até a 4ª série ensino fundamental  \n");
+						k = 1;
+						break;} 
+					case 2:  {
+						pesoescolaridade = 2;
+		System.out.print("Para você que tem escolaridade até o fundamental completo \n");				
+		k = 1;
+						break;}
+					case 3: {
+						pesoescolaridade = 3;
+		System.out.print("Para você que tem escolaridade até o ensino médio completo  \n");
+						k = 1;
+						break;}
+					case 4: {
+						pesoescolaridade = 4;
+		System.out.print("Para você que tem escolaridade o superior completo  \n");
+						k = 1;
+						break;}
+		}
+		}
+
+while (z!= 1) {
+switch (renda) {
+			case 1: {
+				System.out.print("Que ganha até 2 salários-mínimos  \n");
+				z = 1;
+				break;} 
+			case 2:  {
+				System.out.print("Que ganha até 5 salários-mínimos  \n");
+				z = 1;
+				break;}
+			case 3: {
+				System.out.print("Que ganha até 10 salários-mínimos  \n");
+				z = 1;
+				break;}
+			case 4: {
+				System.out.print("Acima de 10 salários-mínimos  \n");
+				z = 1;
+				break;}
+			case 5: {
+				rendabase = 50000;
+				z = 1;
+				break;}
+}
+}
+
+while (w!= 1) {
+switch (quantgarrafas) {
+			case 1: {
+				System.out.print("E que consome até cinco garrafas de plástico por mês \n ");
+
+				w = 1;
+				break;} 
+			case 2:  {
+				System.out.print("E que consome até vinte garrafas de plástico por mês \n ");
+
+				w = 1;
+				break;}
+			case 3: {
+				System.out.print("E que consome até cinquenta garrafas de plástico por mês \n ");
+
+				w = 1;
+				break;}
+			case 4: {
+				System.out.print("E que consome até cem garrafas de plástico por mês \n ");
+
+				w = 1;
+				break;}
+case 5: {
+				System.out.print("E que consome acima de cem garrafas de plástico por mês \n ");
+				w = 1;
+				break;}
+
+}
+}
+System.out.print("Olhe quanto você deveria pagar de compensação ambiental: \n ");
+System.out.print("R$ ");
+System.out.print( multaserpaga);
+System.out.print(".\n");
+	
+
+if (acaomeioambiente == 1) {
+				System.out.print("Você pode pensar em ações voltadas para a proteção e conservação do meio ambiente na sua comunidade! Isto é importante!\n ");
+} 
+else { System.out.print("Continue assim pensando em proteger o meio ambiente para as gerações presentes e futuras! Isto é muito importante! \n");
+}
+if (coletaseletiva == 1) {
+				System.out.print("Continue assim! Separar o lixo facilita a reciclagem, o tratamento e a destinação final dos resíduos.\n");} 
+else { System.out.print("Mude de hábito e comece a separar seu lixo. Esta ação facilita a reciclagem, o tratamento e a destinação final dos resíduos.\n");}
+if (boicote == 1) {
+				System.out.print("Parabéns! Precisamos de consumidores cidadãos, como você! Continue assim!\n");} 
+else { System.out.print("Preste mais atenção nas empresas que poluem o meio ambiente! Se puder, denuncie. Conheça a lei de crimes ambientais (Lei 9.605/1998).\n");}
+if (mutirao == 1) {
+				System.out.print("Continue assim participando de mutirão para limpeza de espaços urbanos! Convide os amigos!\n");} 
+else { System.out.print("Pense mais sobre participar de um mutirão para limpeza de espaços urbanos! Ah, convide os amigos!\n");}
+if (contribuicao == 1) {
+			System.out.print("Parabéns! Sua contribuição é importante para a causa ambiental! Convide os amigos!\n");} 
+else { System.out.print("Se não contribui por restrições financeiras, sem problemas. Mas não deixe de ter consciência ambiental! Contribua para a preservação e limpeza de espaços urbanos! Convide os amigos!\n");}
+if (usosacola == 1) {
+			System.out.print("Pense duas vezes quando for utilizar sacolas plásticas!  Sua contribuição é importante para a causa ambiental! Troque por sacolas reutilizáveis! É questão de hábito! Vamos lá!\n");} 
+else { System.out.print("Parabéns! Não utilizar sacolas plásticas é contribuir para a preservação do meio ambiente!\n ");}
+if (compraselomenosenergia == 1) {
+			System.out.print("Parabéns! Apesar do custo inicial poder ser mais caro, o valor se compensará na fatura de energia elétrica, pois será consumido menos energia elétrica! Visite o sítio do PROCEL: http://www.procelinfo.com.br.\n");} 
+else { System.out.print("Recomenda-se estudar sobre economia de energia e eficiência energética. Proteja o meio ambiente, bem como, seu bolso! Para aparelhos mais eficientes, apesar do custo inicial poder ser mais caro, o valor se compensará na fatura de energia elétrica, pois será consumido menos energia elétrica! Visite o sítio do PROCEL: http://www.procelinfo.com.br.\n");}
+
+if (economizaagua == 1) {
+				System.out.print("Parabéns por economizar água! Água é um recurso escasso e economizá-la é muito importante. Já pensou em captar água da chuva?\n ");} 
+else { System.out.print("Água é um recurso escasso e economizá-la é muito importante. Pense também em captar água da chuva.\n ");}
+
+if (semagrotoxico == 1) {
+				System.out.print("Alimentos frescos fazem bem à sua saúde. Continue com este hábito saudável!\n");} 
+else { System.out.print("Alimentos frescos fazem bem à saúde. Se puder, evite alimentos industrializados e com agrotóxicos!\n");}
+if (taxalimpezario == 1) {
+				System.out.print("Continue contribuindo para a limpeza dos rios!\n");} 
+else { System.out.print("Não contribui para a limpeza dos rios por restrição financeira? Sem problemas. Você pode ajudar a manter os rios limpos participando de mutirões. Pense mais sobre isso!\n");}
+if (canecalavavel == 1) {
+				System.out.print("Parabéns! Usar caneca é questão de hábito. Isso aí!\n");} 
+else { System.out.print("Usar caneca é questão de hábito. Agindo assim, você pode e contribui para a proteção do meio ambiente!\n");}
+
+if (talherplastico == 1) {
+				System.out.print("Evite o uso de talher de plástico! Produz menos lixo e ainda economiza dinheiro!\n");} 
+else { System.out.print("Mude de ideia sobre utilizar talher de plástico. É questão de hábito. Tente!\n");}
+
+if (canudos == 1) {
+				System.out.print("Já passou o momento em que devemos utilizar canudos de plástico! Continue assim!\n");} 
+else { System.out.print("Evite usar canudos de plástico! Produz menos lixo e ainda economiza dinheiro!\n");}
+
+if (energiasolareolica == 1) {
+				System.out.print("Se tens recursos, pense em investir em fontes alternativas de energia! É renovável e gratuita!\n");} 
+else { System.out.print("Ainda não conhece fontes alternativas de energia? Por favor, visite: https://www.aneel.gov.br/proinfa\n");}
+
+if (caronasolidaria == 1) {
+				System.out.print("Obrigado por contribuir com a redução de carros nas ruas praticando a carona solidária!\n");} 
+else { System.out.print("Pense na importância de reduzir o número de carros nas ruas praticando a carona solidária! Todos ganham!\n");}
+
+
+if (transportepublico == 1) {
+				System.out.print("Usar transporte público é um direito de todos!\n");} 
+else { System.out.print("Você pode começar usando o transporte público uma vez por semana. Menos poluição emitida e menos carros nas ruas!\n");}
+
+
+	}
+	}
+
+			
+
+		
+	
+
+
